@@ -50,7 +50,7 @@
 using namespace std;
 
 // this is list of values
-char storage[1] = {0};
+char storage[30000] = {0};
 
 // this is proigram pointer
 char* p = storage;
