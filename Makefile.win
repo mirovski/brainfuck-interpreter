@@ -1,0 +1,34 @@
+# Project: Bf interpreter
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 10.11.20 19:40
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Default\ Profile/main.o Default\ Profile/Bf_interpreter_private.res
+LINKOBJ   = "Default Profile/main.o" "Default Profile/Bf_interpreter_private.res"
+LIBS      = -L"D:/wxDevCppP7-64b/App/devcpp/lib/wx/gcc_lib" -L"D:/wxDevCppP7-64b/App/devcpp/lib" -L"D:/wxDevCppP7-64b/App/devcpp/MinGW32/lib"  
+INCS      = -I"D:/wxDevCppP7-64b/App/devcpp/MinGW32/include"
+CXXINCS   = -I"D:/wxDevCppP7-64b/App/devcpp/MinGW32/include" -I"D:/wxDevCppP7-64b/App/devcpp/" -I"D:/wxDevCppP7-64b/App/devcpp/include/common" -I"D:/wxDevCppP7-64b/App/devcpp/include"
+RCINCS    = --include-dir ""
+BIN       = Default Profile/Bf interpreter.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)  
+CFLAGS    = $(INCS) $(DEFINES)  
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call Fi
