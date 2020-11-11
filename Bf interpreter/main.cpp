@@ -167,10 +167,10 @@ int main()
 				
 			// clear last character from console
 			case '$':
-                system("cls");
-                output = output.substr(0, output.length() - 1);
-                cout << output; 
-                break;
+                		system("cls");
+                		output = output.substr(0, output.length() - 1);
+                		cout << output; 
+                		break;
 				
 			// make delay
 			case '@':
