@@ -27,7 +27,7 @@
  *  run here without  any problems. This is open-source
  *  so you can edit this program and share it if you want.
  *  This is written in 64-bit c++ (version 4.9.2). 
- *  I use Dev-C++ 5.11 IDE for writin this program. List
+ *  I use Dev-C++ 5.11 IDE for writing this program. List
  *  of commands is following:
  *
  *  + = increases current value
